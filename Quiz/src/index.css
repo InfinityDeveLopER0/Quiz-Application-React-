@@ -1,0 +1,74 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family:'Space Grotesk';
+}
+
+/* Content styling */
+.content {
+  max-width: 640px;
+  margin:auto;
+  margin-top: 40px;
+  background:  #e1cc8d;;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  padding: 40px 50px;
+}
+
+.content hr{
+  height: 2px;
+  border: none;
+  background: #4285F4; 
+}
+
+.content h2{
+  font-size: 27px;
+  font-weight: 500;
+}
+
+.content ul li{
+  display: flex;
+  align-items: center;
+  height: 70px;
+  padding-left: 15px;
+  border: 1px solid #686866;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.content button{
+  margin: auto;
+  width: 250px;
+  height: 65px;
+  background: #34A853;
+  color: white;
+  font-size: 25px;
+  font-size: 25px;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.content h5{
+  margin: auto;
+  font-size: 18px;
+}
+
+.content .Correct{
+  background: rgb(140, 196, 140) ;
+  border: 3px solid #34A853;
+}
+
+.content .Wrong{
+  background: rgb(216, 127, 127);
+  border: 3px solid rgb(180, 69, 69);
+}

@@ -1,0 +1,59 @@
+body {
+  background: #ffffff;
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Common blob styles */
+.blob {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.2;
+  z-index: 0;
+}
+
+/* Blue Blob */
+.blob.blue {
+  width: 300px;
+  height: 300px;
+  background: #4285F4;
+  top: -100px;
+  left: -100px;
+}
+
+/* Green Blob */
+.blob.green {
+  width: 250px;
+  height: 250px;
+  background: #34A853;
+  top: 200px;
+  right: -125px;
+}
+
+/* Yellow Blob */
+.blob.yellow {
+  width: 250px;
+  height: 250px;
+  background: #FBBC05;
+  bottom: 200px;
+  left: -125px;
+}
+
+/* Red Blob */
+.blob.red {
+  width: 300px;
+  height: 300px;
+  background: #EA4335;
+  bottom: -100px;
+  right: -100px;
+}
+
+/* Content styling */
+.content {
+  position: relative;
+  z-index: 1; /* bring content above blobs */
+  
