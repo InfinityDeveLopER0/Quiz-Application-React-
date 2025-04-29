@@ -1,6 +1,7 @@
 import { useState, useRef } from "react";
 import Datas from "./datas";
 
+
 function Quiz(){
 
     let[index, setIndex] = useState(0);

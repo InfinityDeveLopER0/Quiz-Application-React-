@@ -7,17 +7,76 @@ body{
   font-family:'Space Grotesk';
 }
 
+body {
+  background: #ffffff81;
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+/* Common blob styles */
+.blob {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.2;
+  z-index: 0;
+}
+
+/* Blue Blob */
+.blob.blue {
+  width: 300px;
+  height: 300px;
+  background: #4285F4;
+  top: -100px;
+  left: -100px;
+}
+
+/* Green Blob */
+.blob.green {
+  width: 250px;
+  height: 250px;
+  background: #34A853;
+  top: 200px;
+  right: -125px;
+}
+
+/* Yellow Blob */
+.blob.yellow {
+  width: 250px;
+  height: 250px;
+  background: #FBBC05;
+  bottom: 200px;
+  left: -125px;
+}
+
+/* Red Blob */
+.blob.red {
+  width: 300px;
+  height: 300px;
+  background: #EA4335;
+  bottom: -100px;
+  right: -100px;
+}
+
 /* Content styling */
 .content {
-  max-width: 640px;
+  position: relative;
+  z-index: 1; /* bring content above blobs */
+}
+
+/* Content styling */
+.content {
+  max-width: 500px;
+  height: 500px;
+  max-height: fit-content;
   margin:auto;
   margin-top: 40px;
-  background:  #e1cc8d;;
+  background: #bacae7;
   color: black;
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  padding: 10px;
+  gap: 12px;
+  padding: 12px;
   border-radius: 10px;
   padding: 40px 50px;
 }
@@ -36,7 +95,7 @@ body{
 .content ul li{
   display: flex;
   align-items: center;
-  height: 70px;
+  height: 50px;
   padding-left: 15px;
   border: 1px solid #686866;
   border-radius: 8px;
@@ -49,13 +108,14 @@ body{
   margin: auto;
   width: 250px;
   height: 65px;
-  background: #34A853;
+  background: #4cbd6a;
   color: white;
   font-size: 25px;
   font-size: 25px;
-  font-weight: 500;
+  font-weight: 600;
   border-radius: 8px;
   cursor: pointer;
+  padding: 10px;
 }
 
 .content h5{
