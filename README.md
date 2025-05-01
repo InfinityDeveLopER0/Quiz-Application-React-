@@ -71,6 +71,7 @@ To run tests, run the following command
 ```bash
   cd Quiz Application[React]
   cd Quiz
+  npm i
   npm run dev
 ```
 
