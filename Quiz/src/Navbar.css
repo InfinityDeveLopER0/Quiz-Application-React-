@@ -1,0 +1,66 @@
+.navbar-container {
+  position: relative;
+  padding: 10px;
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-content {
+  padding: 10px;
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gdsc-logo {
+  height: 45px;
+  margin-right: 15px;
+  transition: transform 0.3s ease;
+}
+
+.gdsc-logo:hover {
+  transform: scale(1.1);
+}
+
+.gdsc-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #4F4F4F;
+  margin: 0;
+  padding: 0;
+  font-family:'Space Grotesk';
+}
+
+.gdsc-subtitle {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: #4F4F4F;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+@media (max-width: 768px) {
+  .navbar-content {
+    justify-content: center;
+  }
+  
+  .text-container {
+    align-items: center;
+  }
+  
+  .gdsc-title {
+    font-size: 1.5rem;
+  }
+  
+  .gdsc-subtitle {
+    font-size: 0.7rem;
+  }
+}
