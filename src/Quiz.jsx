@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from "react";
-import Datas from "./datas";
+import Datas from "./Datas";
 
 function Quiz(){
     let[index, setIndex] = useState(0);
